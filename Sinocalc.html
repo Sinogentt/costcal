@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Trinishopaholic Cost Calculator</title>
+  <title>Personal Cost Calculator</title>
   <style>
     body {
       font-family: "Aptos Narrow", sans-serif;
@@ -44,9 +44,9 @@
   </div>
 
   <div id="jsResults" hidden>
-    <p><strong>USD × 10 :</strong> <span id="ttdResult"></span></p>
+    <p><strong>USD × 6.709 :</strong> <span id="ttdResult"></span></p>
     <p><strong>Freight and Insurance Charge:</strong> <span id="tableResult"></span></p>
-    <p><strong>Service Fee 13%:</strong> <span id="percentResult"></span></p>
+    <p><strong>Service Fee 30%:</strong> <span id="percentResult"></span></p>
     <p><strong>Flat Fee +10:</strong> <span id="flatFeeResult"></span></p>
     <hr>
     <p><strong><big>Total:</big></strong> <span id="totalResult" style="font-weight:bold;"></span></p>
@@ -62,7 +62,7 @@
         return;
       }
 
-      const ttd = usd * 10;
+      const ttd = usd *6.709;
       document.getElementById("ttdResult").textContent = ttd.toFixed(2);
 
       const table = {
